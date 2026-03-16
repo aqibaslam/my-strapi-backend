@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_marquee_marquee_listings",
+  "info": {
+    "displayName": "MarqueeListing",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "MarqueeImage": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

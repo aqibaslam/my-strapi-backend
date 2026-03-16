@@ -29,9 +29,14 @@
     "hero_rating_heading": {
       "type": "string"
     },
-    "list_heading": {
+    "HeroListings": {
       "type": "component",
       "component": "hero.hero-listing",
+      "repeatable": true
+    },
+    "MarqueeImages": {
+      "type": "component",
+      "component": "marquee.marquee-listing",
       "repeatable": true
     }
   }

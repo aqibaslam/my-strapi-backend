@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "list_heading": {
+    "list_title": {
       "type": "string"
     }
   },

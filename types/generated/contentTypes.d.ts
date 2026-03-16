@@ -484,10 +484,11 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     hero_cta: Schema.Attribute.String;
     hero_cta_url: Schema.Attribute.String;
     hero_rating_heading: Schema.Attribute.String;
-    list_heading: Schema.Attribute.Component<'hero.hero-listing', true>;
+    HeroListings: Schema.Attribute.Component<'hero.hero-listing', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
       Schema.Attribute.Private;
+    MarqueeImages: Schema.Attribute.Component<'marquee.marquee-listing', true>;
     project_managed_heading: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     Title: Schema.Attribute.String;
