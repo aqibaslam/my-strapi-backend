@@ -14,8 +14,25 @@
     "Title": {
       "type": "string"
     },
-    "Content": {
-      "type": "blocks"
+    "twenty_k_heading": {
+      "type": "string"
+    },
+    "project_managed_heading": {
+      "type": "string"
+    },
+    "hero_cta": {
+      "type": "string"
+    },
+    "hero_cta_url": {
+      "type": "string"
+    },
+    "hero_rating_heading": {
+      "type": "string"
+    },
+    "list_heading": {
+      "type": "component",
+      "component": "hero.hero-listing",
+      "repeatable": true
     }
   }
 }

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_hero_hero_listings",
+  "info": {
+    "displayName": "hero_listing"
+  },
+  "options": {},
+  "attributes": {
+    "list_heading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
