@@ -24,6 +24,19 @@ export interface MarqueeMarqueeListing extends Struct.ComponentSchema {
   };
 }
 
+export interface ReviewsReview extends Struct.ComponentSchema {
+  collectionName: 'components_reviews_reviews';
+  info: {
+    displayName: 'Review';
+  };
+  attributes: {
+    name: Schema.Attribute.String;
+    thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+    video_vimeo_link: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsBrandslogo extends Struct.ComponentSchema {
   collectionName: 'components_sections_brandslogos';
   info: {
@@ -51,6 +64,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'hero.hero-listing': HeroHeroListing;
       'marquee.marquee-listing': MarqueeMarqueeListing;
+      'reviews.review': ReviewsReview;
       'sections.brandslogo': SectionsBrandslogo;
       'sections.slide': SectionsSlide;
     }

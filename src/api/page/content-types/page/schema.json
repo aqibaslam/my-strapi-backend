@@ -54,6 +54,18 @@
       "type": "component",
       "component": "sections.brandslogo",
       "repeatable": true
+    },
+    "stories_subtitle": {
+      "type": "string"
+    },
+    "stories_title": {
+      "type": "string"
+    },
+    "stories_cta": {
+      "type": "string"
+    },
+    "stories_cta_url": {
+      "type": "string"
     }
   }
 }

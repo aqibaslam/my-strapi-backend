@@ -493,6 +493,10 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     project_managed_heading: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slides: Schema.Attribute.Component<'sections.slide', true>;
+    stories_cta: Schema.Attribute.String;
+    stories_cta_url: Schema.Attribute.String;
+    stories_subtitle: Schema.Attribute.String;
+    stories_title: Schema.Attribute.String;
     Title: Schema.Attribute.String;
     twenty_k_heading: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
