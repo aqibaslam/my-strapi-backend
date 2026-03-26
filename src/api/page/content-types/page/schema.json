@@ -66,6 +66,11 @@
     },
     "stories_cta_url": {
       "type": "string"
+    },
+    "Review": {
+      "type": "component",
+      "component": "reviews.review",
+      "repeatable": true
     }
   }
 }

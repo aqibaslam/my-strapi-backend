@@ -492,6 +492,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     MarqueeImages: Schema.Attribute.Component<'marquee.marquee-listing', true>;
     project_managed_heading: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    Review: Schema.Attribute.Component<'reviews.review', true>;
     slides: Schema.Attribute.Component<'sections.slide', true>;
     stories_cta: Schema.Attribute.String;
     stories_cta_url: Schema.Attribute.String;
