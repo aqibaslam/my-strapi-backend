@@ -478,6 +478,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    brandslogo: Schema.Attribute.Component<'sections.brandslogo', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -491,11 +492,14 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     MarqueeImages: Schema.Attribute.Component<'marquee.marquee-listing', true>;
     project_managed_heading: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    slides: Schema.Attribute.Component<'sections.slide', true>;
     Title: Schema.Attribute.String;
     twenty_k_heading: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    who_subtitle: Schema.Attribute.String;
+    who_title: Schema.Attribute.String;
   };
 }
 

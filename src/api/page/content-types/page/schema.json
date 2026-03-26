@@ -38,6 +38,22 @@
       "type": "component",
       "component": "marquee.marquee-listing",
       "repeatable": true
+    },
+    "who_subtitle": {
+      "type": "string"
+    },
+    "who_title": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "component",
+      "component": "sections.slide",
+      "repeatable": true
+    },
+    "brandslogo": {
+      "type": "component",
+      "component": "sections.brandslogo",
+      "repeatable": true
     }
   }
 }

@@ -24,11 +24,35 @@ export interface MarqueeMarqueeListing extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsBrandslogo extends Struct.ComponentSchema {
+  collectionName: 'components_sections_brandslogos';
+  info: {
+    displayName: 'brandslogo';
+  };
+  attributes: {
+    brand_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
+export interface SectionsSlide extends Struct.ComponentSchema {
+  collectionName: 'components_sections_slides';
+  info: {
+    displayName: 'slide';
+  };
+  attributes: {
+    images: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'hero.hero-listing': HeroHeroListing;
       'marquee.marquee-listing': MarqueeMarqueeListing;
+      'sections.brandslogo': SectionsBrandslogo;
+      'sections.slide': SectionsSlide;
     }
   }
 }
