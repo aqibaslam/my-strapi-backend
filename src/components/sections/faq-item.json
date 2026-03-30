@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_faq_items",
+  "info": {
+    "displayName": "faq-item"
+  },
+  "options": {},
+  "attributes": {
+    "left_faq_question": {
+      "type": "string"
+    },
+    "left_faq_answere": {
+      "type": "text"
+    },
+    "right_faq_question": {
+      "type": "string"
+    },
+    "right_faq_answere": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

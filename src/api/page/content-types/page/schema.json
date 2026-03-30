@@ -88,7 +88,199 @@
     "wave_listing": {
       "type": "component",
       "component": "sections.wave-listing-block",
-      "repeatable": false
+      "repeatable": true
+    },
+    "conversion_title": {
+      "type": "string"
+    },
+    "conversion_description": {
+      "type": "text"
+    },
+    "pink_card_title": {
+      "type": "string"
+    },
+    "pink_card_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "grey_card_title": {
+      "type": "string"
+    },
+    "grey_card_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pink_listing": {
+      "type": "component",
+      "component": "sections.pink-card-listing",
+      "repeatable": true
+    },
+    "grey_listing": {
+      "type": "component",
+      "component": "sections.grey-card-listing",
+      "repeatable": true
+    },
+    "pricing_title": {
+      "type": "string"
+    },
+    "pricing_cards": {
+      "type": "component",
+      "component": "sections.pricing-card",
+      "repeatable": true
+    },
+    "calculator_title": {
+      "type": "string"
+    },
+    "the_number_heading": {
+      "type": "string"
+    },
+    "fint_out_heading": {
+      "type": "string"
+    },
+    "left_title": {
+      "type": "string"
+    },
+    "left_desc": {
+      "type": "string"
+    },
+    "monthly_heading": {
+      "type": "string"
+    },
+    "average_heading": {
+      "type": "string"
+    },
+    "current_conversion_heading": {
+      "type": "string"
+    },
+    "current_monthly_heading": {
+      "type": "string"
+    },
+    "right_title": {
+      "type": "string"
+    },
+    "right_description": {
+      "type": "string"
+    },
+    "new_conversion_heading": {
+      "type": "string"
+    },
+    "extra_revenue_heading": {
+      "type": "string"
+    },
+    "last_desc": {
+      "type": "string"
+    },
+    "calculator_cta": {
+      "type": "string"
+    },
+    "calculator_cta_url": {
+      "type": "string"
+    },
+    "ready_subtitle": {
+      "type": "string"
+    },
+    "ready_title": {
+      "type": "string"
+    },
+    "available_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "available_heading": {
+      "type": "string"
+    },
+    "person_first_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "person_second_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "plus_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "you_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "quick_heading": {
+      "type": "string"
+    },
+    "pick_heading": {
+      "type": "string"
+    },
+    "ready_cta": {
+      "type": "string"
+    },
+    "ready_cta_url": {
+      "type": "string"
+    },
+    "clutch_title": {
+      "type": "string"
+    },
+    "clutch_title_image": {
+      "type": "string"
+    },
+    "clutch_review": {
+      "type": "component",
+      "component": "sections.clutch-review-block",
+      "repeatable": true
+    },
+    "left_column_block": {
+      "type": "component",
+      "component": "sections.faq-item",
+      "repeatable": true
+    },
+    "right_column_block": {
+      "type": "component",
+      "component": "sections.faq-item",
+      "repeatable": true,
+      "required": false,
+      "max": 2
     }
   }
 }

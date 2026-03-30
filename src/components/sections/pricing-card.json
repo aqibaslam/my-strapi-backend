@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_sections_pricing_cards",
+  "info": {
+    "displayName": "pricing-card"
+  },
+  "options": {},
+  "attributes": {
+    "card_title": {
+      "type": "string"
+    },
+    "card_description": {
+      "type": "string"
+    },
+    "price_heading": {
+      "type": "string"
+    },
+    "price_subheading": {
+      "type": "string"
+    },
+    "cta_text": {
+      "type": "string"
+    },
+    "cta_url": {
+      "type": "string"
+    },
+    "listing": {
+      "type": "component",
+      "component": "sections.price-list-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

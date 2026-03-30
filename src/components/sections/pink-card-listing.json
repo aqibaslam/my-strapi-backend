@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_pink_card_listings",
+  "info": {
+    "displayName": "pink_card_listing"
+  },
+  "options": {},
+  "attributes": {
+    "pink_list_heading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

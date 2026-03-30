@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_price_list_items",
+  "info": {
+    "displayName": "price-list-item"
+  },
+  "options": {},
+  "attributes": {
+    "list_heading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

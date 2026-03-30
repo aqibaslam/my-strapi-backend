@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_sections_clutch_review_blocks",
+  "info": {
+    "displayName": "clutch_review_block"
+  },
+  "options": {},
+  "attributes": {
+    "review_svg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "clutch_svg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "clutch_description": {
+      "type": "string"
+    },
+    "clutch_perosn_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "clutch_person_name": {
+      "type": "string"
+    },
+    "clutch_company_name": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_grey_card_listings",
+  "info": {
+    "displayName": "grey_card_listing"
+  },
+  "options": {},
+  "attributes": {
+    "grey_list_heading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

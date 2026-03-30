@@ -478,26 +478,95 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    available_heading: Schema.Attribute.String;
+    available_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    average_heading: Schema.Attribute.String;
     brandslogo: Schema.Attribute.Component<'sections.brandslogo', true>;
+    calculator_cta: Schema.Attribute.String;
+    calculator_cta_url: Schema.Attribute.String;
+    calculator_title: Schema.Attribute.String;
+    clutch_review: Schema.Attribute.Component<
+      'sections.clutch-review-block',
+      true
+    >;
+    clutch_title: Schema.Attribute.String;
+    clutch_title_image: Schema.Attribute.String;
+    conversion_description: Schema.Attribute.Text;
+    conversion_title: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    current_conversion_heading: Schema.Attribute.String;
+    current_monthly_heading: Schema.Attribute.String;
+    extra_revenue_heading: Schema.Attribute.String;
+    fint_out_heading: Schema.Attribute.String;
+    grey_card_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    grey_card_title: Schema.Attribute.String;
+    grey_listing: Schema.Attribute.Component<
+      'sections.grey-card-listing',
+      true
+    >;
     hero_cta: Schema.Attribute.String;
     hero_cta_url: Schema.Attribute.String;
     hero_rating_heading: Schema.Attribute.String;
     HeroListings: Schema.Attribute.Component<'hero.hero-listing', true>;
+    last_desc: Schema.Attribute.String;
+    left_column_block: Schema.Attribute.Component<'sections.faq-item', true>;
+    left_desc: Schema.Attribute.String;
+    left_title: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
       Schema.Attribute.Private;
     MarqueeImages: Schema.Attribute.Component<'marquee.marquee-listing', true>;
+    monthly_heading: Schema.Attribute.String;
+    new_conversion_heading: Schema.Attribute.String;
+    person_first_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    person_second_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    pick_heading: Schema.Attribute.String;
+    pink_card_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    pink_card_title: Schema.Attribute.String;
+    pink_listing: Schema.Attribute.Component<
+      'sections.pink-card-listing',
+      true
+    >;
+    plus_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    pricing_cards: Schema.Attribute.Component<'sections.pricing-card', true>;
+    pricing_title: Schema.Attribute.String;
     project_managed_heading: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    quick_heading: Schema.Attribute.String;
+    ready_cta: Schema.Attribute.String;
+    ready_cta_url: Schema.Attribute.String;
+    ready_subtitle: Schema.Attribute.String;
+    ready_title: Schema.Attribute.String;
     Review: Schema.Attribute.Component<'reviews.review', true>;
+    right_column_block: Schema.Attribute.Component<'sections.faq-item', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 2;
+        },
+        number
+      >;
+    right_description: Schema.Attribute.String;
+    right_title: Schema.Attribute.String;
     slides: Schema.Attribute.Component<'sections.slide', true>;
     stories_cta: Schema.Attribute.String;
     stories_cta_url: Schema.Attribute.String;
     stories_subtitle: Schema.Attribute.String;
     stories_title: Schema.Attribute.String;
+    the_number_heading: Schema.Attribute.String;
     Title: Schema.Attribute.String;
     twenty_k_heading: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -505,7 +574,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     wave_listing: Schema.Attribute.Component<
       'sections.wave-listing-block',
-      false
+      true
     >;
     wave_title: Schema.Attribute.String;
     wave_title_image: Schema.Attribute.Media<
@@ -513,6 +582,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     >;
     who_subtitle: Schema.Attribute.String;
     who_title: Schema.Attribute.String;
+    you_image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
