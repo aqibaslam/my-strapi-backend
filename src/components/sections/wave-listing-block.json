@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_wave_listing_blocks",
+  "info": {
+    "displayName": "wave_listing_block"
+  },
+  "options": {},
+  "attributes": {
+    "list_heading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

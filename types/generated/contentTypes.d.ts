@@ -503,6 +503,14 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    wave_listing: Schema.Attribute.Component<
+      'sections.wave-listing-block',
+      false
+    >;
+    wave_title: Schema.Attribute.String;
+    wave_title_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     who_subtitle: Schema.Attribute.String;
     who_title: Schema.Attribute.String;
   };

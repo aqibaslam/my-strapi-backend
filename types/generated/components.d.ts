@@ -59,6 +59,16 @@ export interface SectionsSlide extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsWaveListingBlock extends Struct.ComponentSchema {
+  collectionName: 'components_sections_wave_listing_blocks';
+  info: {
+    displayName: 'wave_listing_block';
+  };
+  attributes: {
+    list_heading: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -67,6 +77,7 @@ declare module '@strapi/strapi' {
       'reviews.review': ReviewsReview;
       'sections.brandslogo': SectionsBrandslogo;
       'sections.slide': SectionsSlide;
+      'sections.wave-listing-block': SectionsWaveListingBlock;
     }
   }
 }

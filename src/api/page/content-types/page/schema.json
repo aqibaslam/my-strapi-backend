@@ -71,6 +71,24 @@
       "type": "component",
       "component": "reviews.review",
       "repeatable": true
+    },
+    "wave_title": {
+      "type": "string"
+    },
+    "wave_title_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "wave_listing": {
+      "type": "component",
+      "component": "sections.wave-listing-block",
+      "repeatable": false
     }
   }
 }
